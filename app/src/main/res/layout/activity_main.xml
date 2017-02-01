@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.hyugnmin.android.activitycontrol.MainActivity">
+
+    <TextView
+        android:text="return vale2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mainTv"
+        android:layout_marginTop="20dp"
+        android:textSize="24sp"
+        android:layout_below="@+id/btnTrans"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        android:id="@+id/mainEdit"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="82dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="return value3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mainTv2"
+        android:textSize="24sp"
+        android:layout_alignBaseline="@+id/mainTv"
+        android:layout_alignBottom="@+id/mainTv"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="CommonActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnCommon"
+        android:layout_marginTop="27dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Trans2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnTrans2"
+        android:layout_alignBaseline="@+id/btnTrans"
+        android:layout_alignBottom="@+id/btnTrans"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="TransActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:id="@+id/btnTrans"
+        android:layout_below="@+id/mainEdit"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Dial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/btnCommon"
+        android:layout_toStartOf="@+id/btnCommon"
+        android:layout_marginBottom="80dp"
+        android:id="@+id/btnDial" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editDial"
+        android:layout_alignBottom="@+id/btnDial"
+        android:layout_toRightOf="@+id/btnDial"
+        android:layout_toEndOf="@+id/btnDial"
+        android:hint="Dial" />
+
+    <Button
+        android:text="browse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editDial"
+        android:layout_alignLeft="@+id/btnDial"
+        android:layout_alignStart="@+id/btnDial"
+        android:id="@+id/btnBro" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_alignBottom="@+id/btnBro"
+        android:layout_toRightOf="@+id/btnBro"
+        android:layout_toEndOf="@+id/btnBro"
+        android:id="@+id/editBro"
+        android:hint="URL" />
+
+    <Button
+        android:text="Sms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editDial"
+        android:layout_toLeftOf="@+id/editDial"
+        android:layout_toStartOf="@+id/editDial"
+        android:id="@+id/btnSms" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_above="@+id/btnDial"
+        android:layout_toRightOf="@+id/btnSms"
+        android:layout_toEndOf="@+id/btnSms"
+        android:id="@+id/editSms"
+        android:hint="Sms" />
+
+</RelativeLayout>
